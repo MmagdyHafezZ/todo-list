@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>to-do list</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+    <div class="container">
+      <div class="input-area">
+        <div class="input-field">
+          <textarea placeholder="Enter your task here"></textarea>
+          <input
+            type="datetime-local"
+            class="due-date-input"
+            placeholder="Enter due date"
+          />
+        </div>
+      </div>
+      <ul class="todoLists"></ul>
+      <div class="pending-tasks">
+        <span>
+          You have <span class="pending-num">no</span> tasks pending.
+        </span>
+        <button class="create-button">Create Task</button>
+        <button class="clear-button">Clear All</button>
+      </div>
+    </div>
+    <script src="function.js"></script>
+  </body>
+</html>
